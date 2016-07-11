@@ -1,0 +1,6 @@
+[package]
+name = "boringssl"
+version = "0.0.1"
+authors = [" <js@webtun.org>"]
+
+[dependencies]
