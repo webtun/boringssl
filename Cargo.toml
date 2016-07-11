@@ -1,6 +1,10 @@
 [package]
 name = "boringssl"
+description = "BoringSSL bindings"
 version = "0.0.1"
-authors = [" <js@webtun.org>"]
+authors = ["js <js@webtun.org>"]
+license = "MIT/Apache-2.0"
+homepage = "http://webtun.org"
+repository = "https://github.com/webtun/boringssl"
 
 [dependencies]
