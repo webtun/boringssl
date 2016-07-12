@@ -1,6 +1,6 @@
 # BoringSSL Rust Bindings
 
-[![Build Status](https://travis-ci.org/webtun/boringssl.svg?branch=master)](https://travis-ci.org/webtun/boringssl)
+[![Build Status](https://travis-ci.org/webtun/boringssl.svg?branch=master)](https://travis-ci.org/webtun/boringssl) [![Latest Version](https://img.shields.io/crates/v/boringssl.svg)](https://crates.io/crates/boringssl)
 
 This package provides bindings for [BoringSSL](https://boringssl.googlesource.com/boringssl/).
 BoringSSL is statically linked by this package.
