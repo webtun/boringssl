@@ -32,7 +32,7 @@ enum CryptoTarget {
 fn check_env(src: CryptoTarget) -> Context {
     let target = env::var("TARGET").unwrap();
     let t: Vec<&str> = target.split('-').collect();
-    assert_eq!(t.len(), 3);
+    assert!(t.len() >= 3);
 
     // <arch><sub>-<vendor>-<sys>-<abi>, where:
     //  arch = x86, arm, thumb, mips, etc.
