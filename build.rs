@@ -158,7 +158,7 @@ fn main() {
         //.define("BORINGSSL_NO_STATIC_INITIALIZER", None) // not yet
         .define("OPENSSL_SMALL", None)
         .define("_XOPEN_SOURCE", Some("700"))
-        .flag("-std=c99");
+        .flag("-std=c11");
 
     // add source files
     for src in &asm_src {
