@@ -1,11 +1,13 @@
 [package]
 name = "boringssl"
 description = "BoringSSL bindings"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["js <js@webtun.org>"]
 license = "MIT/Apache-2.0"
 homepage = "http://webtun.org"
 repository = "https://github.com/webtun/boringssl"
+readme = "README.md"
+keywords = ["tls", "ssl", "boringssl", "openssl", "webtun"]
 build = "build.rs"
 
 [build-dependencies]
