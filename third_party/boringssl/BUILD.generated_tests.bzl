@@ -609,9 +609,17 @@ def create_tests(copts):
   )
 
   native.cc_test(
-      name = "pkcs8_test",
+      name = "newhope_test",
       size = "small",
-      srcs = ["src/crypto/pkcs8/pkcs8_test.cc"] + test_support_sources_complete,
+      srcs = ["src/crypto/newhope/newhope_test.c"] + test_support_sources_complete,
+      copts = copts,
+      deps = [":crypto"],
+  )
+
+  native.cc_test(
+      name = "obj_test",
+      size = "small",
+      srcs = ["src/crypto/obj/obj_test.cc"] + test_support_sources_complete,
       copts = copts,
       deps = [":crypto"],
   )
@@ -620,6 +628,14 @@ def create_tests(copts):
       name = "pkcs12_test",
       size = "small",
       srcs = ["src/crypto/pkcs8/pkcs12_test.cc"] + test_support_sources_complete,
+      copts = copts,
+      deps = [":crypto"],
+  )
+
+  native.cc_test(
+      name = "pkcs8_test",
+      size = "small",
+      srcs = ["src/crypto/pkcs8/pkcs8_test.cc"] + test_support_sources_complete,
       copts = copts,
       deps = [":crypto"],
   )
